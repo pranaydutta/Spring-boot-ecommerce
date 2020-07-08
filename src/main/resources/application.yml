@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user
+    username: root
+    password: root
+    platforms: mysql
+    initialization-mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      
+      
+  http:
+    servlet: 
+      multipart: 
+        max-file-size: 100MB
+        max-request-size: 110MB
+  jackson: 
+    serialization:
+        fail-on-empty-beans: false
